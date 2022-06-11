@@ -5,20 +5,20 @@
 class Hello < Formula
   desc "Hello World CLI"
   homepage "https://github.com/go-cli-tool-workshop-2022/hello"
-  version "0.1.0-dev-1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/go-cli-tool-workshop-2022/hello/releases/download/v0.1.0-dev-1/hello_v0.1.0-dev-1_darwin_arm64.tar.gz"
-      sha256 "4feb362590f0f5725a8302bdc8564f16b5325764703dd789a2149af83783d8e6"
+      url "https://github.com/go-cli-tool-workshop-2022/hello/releases/download/v0.1.0/hello_v0.1.0_darwin_arm64.tar.gz"
+      sha256 "c9208234f7f10f89540f8ad84e4eb0db200dffee72daf6c6d061fcd698a19302"
 
       def install
         bin.install "hello"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-cli-tool-workshop-2022/hello/releases/download/v0.1.0-dev-1/hello_v0.1.0-dev-1_darwin_amd64.tar.gz"
-      sha256 "4a9ba685543f99f61403bbcb45232d4654c1d5923ce27bc427f1d71efdf0bcd0"
+      url "https://github.com/go-cli-tool-workshop-2022/hello/releases/download/v0.1.0/hello_v0.1.0_darwin_amd64.tar.gz"
+      sha256 "0850b2b77da86ecb9d609e5ebcdd75ca52d20e28b406ebe05b031bde81ae263a"
 
       def install
         bin.install "hello"
@@ -28,16 +28,16 @@ class Hello < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-cli-tool-workshop-2022/hello/releases/download/v0.1.0-dev-1/hello_v0.1.0-dev-1_linux_arm64.tar.gz"
-      sha256 "ada823b3609aa3072227853658941af9f907849c4fb5521972e9014e313130af"
+      url "https://github.com/go-cli-tool-workshop-2022/hello/releases/download/v0.1.0/hello_v0.1.0_linux_arm64.tar.gz"
+      sha256 "1290b5cdccf01905a67864d290b5ed018fedfab8d48e03bcb1db303915f2573d"
 
       def install
         bin.install "hello"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-cli-tool-workshop-2022/hello/releases/download/v0.1.0-dev-1/hello_v0.1.0-dev-1_linux_amd64.tar.gz"
-      sha256 "685bf17dd32732e17447ac2a527f8bcd263c5ac08424ec231d7ab49eb00d80b0"
+      url "https://github.com/go-cli-tool-workshop-2022/hello/releases/download/v0.1.0/hello_v0.1.0_linux_amd64.tar.gz"
+      sha256 "4fca68c98dd7d8219c5c98020d7d33d903e6b2ec71982f052b89fa2bb0e3ef10"
 
       def install
         bin.install "hello"
